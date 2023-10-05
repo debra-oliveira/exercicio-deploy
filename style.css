@@ -1,5 +1,5 @@
-/* primeiras propriedades: Lembrando que o asterisco pega o site todo*/
-* {
+body/* primeiras propriedades: Lembrando que o asterisco pega o site todo*/
+{
     /* define a área de margem nos quatro lados do elemento */
     margin: 0;
     /* distância entre o conteúdo de um elemento e suas bordas */
@@ -7,4 +7,98 @@
     /* para configurar uma ou mais das propriedades de contorno */
     outline: 0;
   }
-  
+
+  body{
+    font-family: 'Roboto', sans-serif;
+  }
+
+li {
+  list-style: none;
+}
+
+.header-menu{
+  display: flex;
+  position: fixed;
+  width: 100%;
+  padding: 8px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  height: 60px;
+  background-color: #724796;
+}
+
+.header-menu nav {
+  display: flex;
+  justify-content: flex-end; /*Colocando no lado direito da pagina*/
+  width: 100%; /*Largura*/
+}
+
+.lista-menu li>a {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: inherit;
+}
+
+.lista-menu {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+  align-items: center;
+}
+
+.principal {
+  height: 100vh;
+  display: flex;
+  background-color: #eaeaea;
+}
+
+.sub-container-principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container{
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 75px;
+  max-width: 960px;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 100%;
+}
+
+.nome-completo{
+  font-size: 36px;
+  color: #ff4dbc;
+  font-weight: 700px;
+  height: 45px;
+}
+
+.profissao{
+  color: #c6b5d5;
+  height: 60px;
+}
+
+.texto-sobre{
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.article-lista{
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.topico-principal{
+  font-size: 20px;
+  color: #ff4dbc;
+}
+
+.lista-item{
+  padding: 32px;
+}
